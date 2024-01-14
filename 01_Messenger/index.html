@@ -4,34 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/75906f04fb.js"
+      crossorigin="anonymous"
+    ></script>
     <title>MessengerClone</title>
   </head>
   <body>
     <div class="container">
-      <!-- header section -->
+      <!-- Header Menu -->
       <header class="header">
         <div class="header_items">
-          <img class="header_logo" src="./images/mes_logo.png" alt="mes-logo" />
-          <ul class="menu_items">
-            <li class="menu_items--list"><a href="#">Features</a></li>
-            <li class="menu_items--list"><a href="#">Desktop app</a></li>
-            <li class="menu_items--list"><a href="#">Privacy and safety</a></li>
-            <li class="menu_items--list"><a href="#">For developers</a></li>
-          </ul>
+          <div class="header_logo-area">
+            <img
+            src="./images/mes_logo.png"
+            class="header_logo"
+            alt="messenger logo"
+            />
+          </div>
+          <nav class="list">
+            <a href="#">Features</a>
+            <a href="#">Desktop app</a>
+            <a href="#">Privacy and safety</a>
+            <a href="#">For developers</a>
+          </nav>
         </div>
       </header>
 
-      <!-- content section -->
-      <section class="section">
-        <!-- section right -->
-        <div class="section_left">left</div>
+      <div class="container_box">
+        <section class="section_container">
+          <!-- Section Right -->
+          <div class="section_right">
+            <h1>Hang out anytime, anywhere</h1>
+            <p>
+              Messenger makes it easy and fun to stay close to your favourite
+              people.
+            </p>
+            <!-- LOgin Container -->
+            <div class="container_login">
+              <div class="input_field">
+                <form action="">
+                  <input
+                    type="email"
+                    placeholder="Email address or phone number"
+                  />
+                  <input type="password" placeholder="Password" />
+                  <div>
+                    <button class="btn btn-blue">Log in</button>
+                    <h3>Forgotten your password?</h3>
+                  </div>
+                </form>
+                <div>
+                  <label for="">
+                    <input type="checkbox" placeholder="Keep me signed in" />
+                  </label>
+                  <label for=""> Keep me signed in </label>
+                </div>
+              </div>
+              <!-- Logo Area -->
+              <div class="logo_area">
+                <a href="#" target="_blank">
+                  <img src="images/appstore.png" alt="appstore" width="100" />
+                </a>
+                <a href="#" target="_blank">
+                  <img src="images/microsoft.png" alt="appstore" width="100" />
+                </a>
+              </div>
+            </div>
+          </div>
 
-        <!-- section left -->
-        <div class="section_right">right</div>
-      </section>
-
-      <!-- footer section -->
-      <footer class="footer">Copyright</footer>
+          <!-- Section Left -->
+          <div class="section_left">            
+            <img
+              src="images/L_photo.png"
+              alt="photo"              
+            />
+          </div>
+        </section>
+      </div>
     </div>
+    
+      <!-- Footer Section -->
+      <footer class="section_footer">
+        <div class="meta_text-right">
+          <p >
+            <strong> &copy; Meta 2024.</strong
+              ><span></span>
+              The Apple and Google Play logos are trademarks of their respective
+              owners.</span
+              >
+            </p>
+          </div>
+          <div class="meta_text-left">
+            <nav class="meta_text-left-list">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cookie Policy</a>
+              <a href="#">Terms</a>
+            </nav>
+          
+          <div class="language_bar">
+            <button><span>English(UK)</span></button>
+            <i class="fa-solid fa-caret-down"></i>
+            <ul >
+              <li>Myanmar</li>
+              <li>English</li>
+              <li>Chinese</li>
+              <li>Espanol</li>
+              <li>France</li>
+            </ul>
+          </div>
+          <img
+          src="images/meta_logo.png"
+          alt="meta logo"
+          class="meta-logo"
+          width="150"
+          />
+        </div>
+      </footer>
   </body>
 </html>
