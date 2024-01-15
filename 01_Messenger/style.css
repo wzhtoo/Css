@@ -19,84 +19,190 @@ body {
   overflow-y: scroll;
   font-family: "Roboto", sans-serif;
 }
+/* Start */
 .container {
   width: 100vw;
   scroll-behavior: smooth;
-}
-/* Header Items */
-.header {
-  width: 100%;
-  padding: 0 3%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  z-index: 1000;
-  position: sticky;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  box-shadow: 0px 0.3px 0.5px rgba(0, 0, 0, 0.5);
-}
-.header_items {
-  width: 100%;
-  margin: 1.5rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header_logo {
-  width: 50px;
-  cursor: pointer;
-}
-.list a:link {
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin: 0rem 2.5rem;
-  padding: 0.5rem 0;
-}
-.list a:hover {
-  border-bottom: 0.3rem solid blue;
-}
 
-/* Content Container Box */
-.container_box {
-  width: 100%;
-  padding: 0 3%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.section_container {
-  margin: 3rem 0;
-  display: flex;
-}
-.section_right {
-  width: 50%;
+  /* Header Items */
+  .header {
+    width: 100%;
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 0.3px 0.5px rgba(0, 0, 0, 0.5);
 
-  h1 {
-    font-size: 8rem;
-    line-height: 1.1;
-    margin-bottom: 3rem;
-    background-image: linear-gradient(
-      83.84deg,
-      #0088ff -6.87%,
-      #a033ff 26.54%,
-      #ff5c87 58.58%
-    );
-    --webkit-background-clip: text;
-    background-clip: text;
-    display: inline-block;
-    color: transparent;
+    .header_items {
+      width: 100%;
+      margin: 1.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .header_logo {
+        width: 50px;
+        cursor: pointer;
+      }
+      a {
+        color: #777;
+      }
+      .list a:link {
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin: 0rem 2.5rem;
+        padding: 0.5rem 0;
+      }
+      .list a:hover {
+        border-bottom: 0.3rem solid blue;
+      }
+    }
   }
-}
+  /* Content Container Box */
+  .container_box {
+    color: #777;
+    width: 100%;
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
-.section_left {
-  width: 50%;
-}
-.section_left img {
-  width: 100%;
-  height: auto;
+    .section_container {
+      margin: 3rem 0;
+      display: flex;
+
+      /* Section Right */
+      .section_right {
+        width: 50%;
+
+        h1 {
+          font-size: 8rem;
+          line-height: 1.1;
+          margin-bottom: 3rem;
+          background-image: linear-gradient(
+            83.84deg,
+            #0088ff -6.87%,
+            #a033ff 26.54%,
+            #ff5c87 58.58%
+          );
+          --webkit-background-clip: text;
+          background-clip: text;
+          display: inline-block;
+          color: transparent;
+        }
+
+        p {
+          width: 45rem;
+          margin-bottom: 3.5rem;
+          font-size: 1.8rem;
+        }
+
+        .section_right_login {
+          display: flex;
+          flex-direction: column;
+
+          .input_field form {
+            width: 30rem;
+            /* background-color: #444; */
+          }
+          input {
+            border: 0;
+            border-radius: 1rem;
+            margin: 1rem 0;
+            width: 100%;
+            padding: 1rem 1rem;
+            font-size: 1.6rem;
+            background-color: #ddd;
+            letter-spacing: 0.5px;
+            outline: none;
+          }
+        }
+        .input_field form input:focus {
+          border: 1px solid #0084ff;
+          border-radius: 1rem;
+        }
+
+        .login_button {
+          margin: 3rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .login_button a {
+          text-decoration: none;
+          font-size: 1.5rem;
+          letter-spacing: 0.5px;
+          color: #0a7cff;
+          font-weight: bold;
+        }
+        .login_button a:hover {
+          text-decoration: underline;
+        }
+
+        .btn {
+          border: 1px solid #0084ff;
+          background-color: #0084ff;
+          border-radius: 2.4rem;
+          padding: 1rem 2rem;
+
+          color: #fff;
+          font-size: 2rem;
+          display: inline-block;
+          cursor: pointer;
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+        }
+        .btn:hover {
+          background-color: #4d4dff;
+        }
+        .signed {
+          /* background-color: gray; */
+          width: 15rem;
+          margin-bottom: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .signed_checkbox {
+          /* find increase check box size link
+          https://stackoverflow.com/questions/306924/can-i-change-the-checkbox-size-using-css
+           */
+          /* Double-sized Checkboxes */
+          -ms-transform: scale(1.5); /* IE */
+          -moz-transform: scale(1.5); /* FF */
+          -webkit-transform: scale(1.5); /* Safari and Chrome */
+          -o-transform: scale(1.5); /* Opera */
+          transform: scale(1.5);
+          padding: 10px;
+        }
+        .signed_label {
+          font-weight: 500;
+          font-size: 1.4rem;
+          color: #595959;
+        }
+      }
+      /* Section Left */
+      .section_left {
+        width: 50%;
+      }
+      .section_left img {
+        width: 100%;
+        height: auto;
+      }
+      .logo_area {
+        width: 25.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
 }
 
 /* Footer */
